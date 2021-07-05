@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class CreateUsers extends Component{
+export default class Projects extends Component{
     constructor(props){
         super(props);
 
@@ -69,7 +69,7 @@ render(){
     return(
         <div>
              <p>
-             You are in the  Create Users component
+             You are in the Projects
             </p>
         </div>
     )}
