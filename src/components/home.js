@@ -5,7 +5,7 @@ render(){
     return(
         <div>
              <p>
-             You are in the Home 
+             You are in the Home page 
             </p>
         </div>
     )}
