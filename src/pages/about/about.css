@@ -1,12 +1,12 @@
 .data{
     text-align: center;
     margin-top: 20%;
-    margin-right: 20%;
+    margin-right: 15%;
 }
 h1{
     margin: 10%;
 }
-.container{
+.container1{
     margin-top: 10%;
     
     display: flex;
@@ -14,5 +14,7 @@ h1{
     justify-content: center;
 }
 .personal_img{
-    width: 300px;
+    margin-top: 10%;
+    margin-right: 50%;
+    width: 50px;
 }

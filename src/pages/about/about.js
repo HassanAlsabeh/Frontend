@@ -42,7 +42,7 @@ render(){
         {/* <h1>{this.state.About && this.state.About[0] && this.state.About[1].title}</h1> */}
 
         {this.state.About && this.state.About.map((item,index)=>{
-                return (<div className="container">
+                return (<div className="container1">
                    
                     <div className="data">
                 <div className="title" key={item._id}>
@@ -56,9 +56,9 @@ render(){
                 <p>{item.description4}</p>
                 </div>
                     </div>
-                    <div>
+                    <div className="personal_img">
 
-<img src="https://dreambuilders.dk/wp-content/uploads/2015/03/myAvatar-1.png" className="personal_img"/>
+<img src="https://dreambuilders.dk/wp-content/uploads/2015/03/myAvatar-1.png" />
     </div>
                     </div>
                     )

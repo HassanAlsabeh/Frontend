@@ -12,10 +12,11 @@ import AboutUpdate from "./components/about.crud";
 
 function App() {
   return (
-    <Router>
-      <div className="container">
-        <Navbar />
-        <br/>
+    
+      
+      <Router>
+      
+      <Navbar />
         <Route path="/home" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/update/about" exact component={AboutUpdate} />
@@ -23,8 +24,9 @@ function App() {
         <Route path="/projects"exact component={Projects} />
         <Route path="/contact" exact component={Contacts} />
     
-      </div>
+      
     </Router>
+    
   );
 }
 

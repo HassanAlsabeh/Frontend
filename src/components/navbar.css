@@ -1,12 +1,12 @@
 /* Hamburger Menu */
-body {
+/* body {
 	margin: 0;
 	padding: 0;
 	background: #f4f4f4;
-	color: #444444;
+	color: #383737;
 	font-family: "Roboto", sans-serif;
 	overflow-x: hidden;
-}
+} */
 
 a {
 	text-decoration: none !important;
@@ -83,11 +83,11 @@ a:hover {
 
 #menu {
 	position: absolute;
-	width: 430px;
+	width: 470px;
 	margin: -100px 0 0 0;
 	padding: 50px;
 	padding-top: 125px;
-	right: -300px;
+	right: -400px;
 	
 	list-style-type: none;
 	-webkit-font-smoothing: antialiased;
