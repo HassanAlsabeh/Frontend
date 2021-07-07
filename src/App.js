@@ -1,29 +1,30 @@
-import React from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import Navbar from "./components/navbar";
-import Home from "./components/home";
-import About from "./components/about";
-import Experience  from "./components/experience";
-import Projects from "./components/projects";
-import Contacts from "./components/contact"
-
+import "./App.css";
+import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./components/Pages/Home";
+import { About } from "./components/Pages/About";
+import { Experience } from "./components/Pages/Experience";
+import { Projects } from "./components/Pages/Projects";
+import { Contact } from "./components/Pages/Contact";
 
 function App() {
   return (
-    <Router>
-      <div className="container">
-        <Navbar />
-        <br/>
-        <Route path="/home" exact component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/experience" component={Experience} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contacts} />
-    
-      </div>
-    </Router>
+    <>
+      <Router>
+        <NavBar />
+
+        <div className="pages">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/Experience" component={Experience} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/projects" component={Projects} />
+
+          </Switch>
+        </div>
+      </Router>
+    </>
   );
 }
 
