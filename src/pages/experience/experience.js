@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Navbar from "../../components/navbar/navbar";
 import ExpereinceCard from "../../components/Expereinces-cards/expereince.cards";
 import Footer from "../../components/footer/footer";
 const project = [
@@ -13,6 +13,7 @@ export default class Expereinces extends Component {
   render() {
     return (
       <div>
+         <Navbar />
       <div className="cards">
         
         {project.map((item) => {

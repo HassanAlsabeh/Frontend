@@ -1,4 +1,5 @@
 import "./contact.css";
+import Navbar from "../../components/navbar/navbar";
 import emailjs from "emailjs-com";
 
 const Mailer = () => {
@@ -22,6 +23,7 @@ const Mailer = () => {
   // render(){
   return (
     <div className="Contacts">
+       <Navbar />
       <section id="contact">
         <h1 class="section-header">Contact</h1>
 

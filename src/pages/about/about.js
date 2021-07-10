@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./about.css";
+import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 export default class Contacts extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ export default class Contacts extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5001/about/")
+      .get("http://localhost:5003/about/")
       .then((response) => {
         this.setState({ About: response.data });
       })
@@ -23,7 +24,7 @@ export default class Contacts extends Component {
   }
 
   // deleteAbout(id) {
-  //     axios.delete('http://localhost:5001/about/'+id)
+  //     axios.delete('http://localhost:5000/about/'+id)
   //       .then(response => { console.log(response.data)});
 
   //     this.setState({
@@ -34,6 +35,7 @@ export default class Contacts extends Component {
   render() {
     return (
       <div>
+        <Navbar />
         {/* <h1>{this.state.About && this.state.About[0] && this.state.About[1].title}</h1> */}
 
         {this.state.About &&
@@ -42,6 +44,9 @@ export default class Contacts extends Component {
               <div className="container1">
                 <div className="data">
                   <div className="title" key={item._id}>
+                  <div className="button1 ">
+                    <a href='../components/pdf/Hassan.resume.pdf' download>Resume</a>
+                    </div>
                     <h1>{item.title1}</h1>
                     <p>{item.description1}</p>
                     <h1>{item.title2}</h1>
