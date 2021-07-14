@@ -14,7 +14,7 @@ export default class Contacts extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5003/about/")
+      .get("http://localhost:5002/about/")
       .then((response) => {
         this.setState({ About: response.data });
       })
@@ -24,7 +24,7 @@ export default class Contacts extends Component {
   }
 
   // deleteAbout(id) {
-  //     axios.delete('http://localhost:5000/about/'+id)
+  //     axios.delete('http://localhost:5007/create/'+id)
   //       .then(response => { console.log(response.data)});
 
   //     this.setState({
@@ -44,21 +44,23 @@ export default class Contacts extends Component {
               <div className="container1">
                 <div className="data">
                   <div className="title" key={item._id}>
+                  
+                    <h1>{item.title1}</h1>
+                    <h3>{item.description1}</h3>
+                    <h1>{item.title2}</h1>
+                    <h3>{item.description2}</h3>
+                    <h1>{item.title3}</h1>
+                    <h3>{item.description3}</h3>
+                    <h1>{item.title4}</h1>
+                    <h3>{item.description4}</h3>
+                  </div>
                   <div className="button1 ">
                     <a href='../components/pdf/Hassan.resume.pdf' download>Resume</a>
                     </div>
-                    <h1>{item.title1}</h1>
-                    <p>{item.description1}</p>
-                    <h1>{item.title2}</h1>
-                    <p>{item.description2}</p>
-                    <h1>{item.title3}</h1>
-                    <p>{item.description3}</p>
-                    <h1>{item.title4}</h1>
-                    <p>{item.description4}</p>
-                  </div>
                 </div>
                 <div className="personal_img">
                   <img src="https://dreambuilders.dk/wp-content/uploads/2015/03/myAvatar-1.png" />
+                  
                 </div>
               </div>
             );

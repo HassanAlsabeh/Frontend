@@ -7,12 +7,12 @@ export default class ExpereinceCard extends Component {
   render() {
     return (
       
-      <div class="container">
-        <div class="card">
-          <img src="//unsplash.it/399/400" alt="" class="card-img"></img>
-          <div class="card-text">
-            <h3 class="card-title">{this.props.data.title}</h3>
-            <p class=" card-body">{this.props.data.desc}</p>
+      <div className="container">
+        <div className="card">
+          <img src="//unsplash.it/399/400" alt="" className="card-img"></img>
+          <div className="card-text">
+            <h3 className="card-title">{this.props.data.title}</h3>
+            <p className=" card-body">{this.props.data.desc}</p>
           </div>
         </div>
       </div>

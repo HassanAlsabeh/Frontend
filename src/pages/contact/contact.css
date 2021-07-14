@@ -41,7 +41,7 @@
 .form-control,
 textarea {
   max-width: 100%;
-  padding: 4%;
+  padding: 1.5%;
   width: 300px;
   margin: 3%;
   background-color: #000;
@@ -51,8 +51,8 @@ textarea {
 
 .send-button {
   margin-left: 18%;
-  margin-top: 15px;
-  height: 54px;
+  margin-top: 25px;
+  height: 44px;
   width: 150px;
   overflow: hidden;
   transition: all 1s ease-in-out;
@@ -64,7 +64,7 @@ textarea {
   transition: all 1s ease-in-out;
 }
 .alt-send-button i {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .send-text {
@@ -89,14 +89,16 @@ textarea {
   margin-left: -30px;
   padding-right: 20px;
 }
-
+.contact-list i{
+  font-size: 1.5em;
+}
 .list-item {
   line-height: 4;
   color: #aaa;
 }
 
 .contact-text {
-  font: 300 18px "Lato", sans-serif;
+  font: 300 14px "Lato", sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
@@ -106,6 +108,7 @@ textarea {
 }
 
 .phone {
+  
   margin-left: 56px;
 }
 

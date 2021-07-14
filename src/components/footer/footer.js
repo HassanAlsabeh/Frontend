@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./footer.scss";
+import { NavLink } from "react-router-dom";
 export default class Footer extends Component {
   render() {
     return (
@@ -7,8 +8,11 @@ export default class Footer extends Component {
         <footer class="flex-rw">
           <ul class="footer-list-top">
             <div className="logo">
-              <span>SJ</span>
-              <i className="fab fa-connectdevelop"></i>{" "}
+            <NavLink exact to="/" className="nav-logo">
+            <span>SJ</span>
+            <i className="fab fa-connectdevelop"></i>
+          </NavLink>
+            
             </div>
           </ul>
 
@@ -33,31 +37,29 @@ export default class Footer extends Component {
                 HOME DECOR
               </a>
             </li>
+           
+          </ul><ul class="footer-list-top">
+            <li>
+              <h4 class="footer-list-header">The Gift Selection</h4>
+            </li>
+
             <li>
               <a
-                href="/Mugs/cat/id/32"
+                href="/Angels/cat/id/70"
                 class="generic-anchor footer-list-anchor"
               >
-                MUGS
+                ANGEL FIGURINES
               </a>
             </li>
             <li>
               <a
-                href="/Pet-Lover/cat/id/108"
+                href="/Home-Decor/cat/id/64"
                 class="generic-anchor footer-list-anchor"
               >
-                PET LOVER
+                HOME DECOR
               </a>
             </li>
-            <li>
-              <a
-                href="/Ladies-Accessories/cat/id/117"
-                class="generic-anchor footer-list-anchor"
-                target="_blank"
-              >
-                HANDBAGS & JEWELRY
-              </a>
-            </li>
+           
           </ul>
           <ul class="footer-list-top">
             <li id="help">
@@ -81,33 +83,8 @@ export default class Footer extends Component {
                 FAQ
               </a>
             </li>
-            <li id="find-a-store">
-              <a
-                href="/shop/store-locator"
-                class="generic-anchor footer-list-anchor"
-                itemprop="significantLink"
-              >
-                STORE LOCATOR
-              </a>
-            </li>
-            <li id="user-registration">
-              <a
-                href="/shop/user-registration?URL="
-                class="generic-anchor footer-list-anchor"
-                itemprop="significantLink"
-              >
-                NEW USERS
-              </a>
-            </li>
-            <li id="order-tracking">
-              <a
-                href="/shop/order-status"
-                itemprop="significantLink"
-                class="generic-anchor footer-list-anchor"
-              >
-                ORDER STATUS
-              </a>
-            </li>
+           
+            
           </ul>
           <section class="footer-social-section flex-rw">
             <span class="footer-social-overlap footer-social-connect">

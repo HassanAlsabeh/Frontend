@@ -10,17 +10,11 @@ export default class Home extends Component {
   <div id="formContent">
 
     <h2 class="active"> Sign In </h2>
-   
-
-    <div class="fadeIn first">
-      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-    </div>
-
 
     <form>
-      <input type="text1" id="login" class="fadeIn second" name="login" placeholder="login"/>
-      <input type="text1" id="password" class="fadeIn third" name="login" placeholder="password"/>
-      <input type="submit" class="fadeIn fourth" value="Log In"/>
+      <input type="text2" id="login" class="fadeIn second" name="login" placeholder="login"/>
+      <input type="text2" id="password" class="fadeIn third" name="login" placeholder="password"/>
+      <a href="/dashboard"><input type="button2" class="fadeIn fourth" value="Log In"/></a>
     </form>
 
 

@@ -106,7 +106,7 @@ export default class About extends Component {
     console.log(exercise);
     axios
       .put(
-        "http://localhost:5003/update/about/60e5c7a90b839b7dd9ecc70f",
+        "http://localhost:5002/update/about/60e5c7a90b839b7dd9ecc70f",
         exercise
       )
       .then((res) => console.log(res.data));
@@ -193,6 +193,7 @@ export default class About extends Component {
           <div>
             <input type="submit" value="Create About data" />
           </div>
+          
         </form>
       </div>
     );
