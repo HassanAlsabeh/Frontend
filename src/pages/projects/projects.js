@@ -23,7 +23,7 @@ export default class Projects extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5002/project/")
+      .get("http://localhost:5003/project/")
       .then((response) => {
         this.setState({ Projects: response.data });
       })
@@ -52,8 +52,9 @@ export default class Projects extends Component {
                 <div class="container5" key={item._id}>
                   <div className="card">
                     <img
-                      src={"//unsplash.it/399/400"}
+                      src={`http://localhost:5003/project/uploads/${item.image}`}
                       alt=""
+                      height="200px"
                       className="card-img"
                     ></img>
                     <div className="card-text">

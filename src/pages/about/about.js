@@ -14,7 +14,7 @@ export default class Contacts extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:5002/about/")
+      .get("http://localhost:5003/about/")
       .then((response) => {
         this.setState({ About: response.data });
       })

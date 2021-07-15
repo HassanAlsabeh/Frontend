@@ -9,6 +9,8 @@ import Projects from "./pages/projects/projects";
 import Mailer from "./pages/contact/contact";
 import AboutUpdate from "./components/about.crud";
 import ProjectAdd from "./components/project.add";
+import ProjectUpdate from "./components/project.update";
+import Projectdelete from "./components/project.delete";
 import Login from "../src/pages/login/login";
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Route path="/about" exact component={About} />
       <Route path="/update/about" exact component={AboutUpdate} />
       <Route path="/project/add" exact component={ProjectAdd} />
+      <Route path="/project/update" exact component={ProjectUpdate} />
+      <Route path="/project/delete" exact component={Projectdelete} />
       <Route path="/experience" exact component={Experience} />
       <Route path="/projects" exact component={Projects} />
       <Route path="/contact" exact component={Mailer} />
