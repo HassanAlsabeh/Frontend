@@ -1,6 +1,6 @@
 .navbar {
-  background-image: linear-gradient( 135deg, #9c3b36 10%, #360940 100%);
-  height: 80px;
+  /*background-image: linear-gradient( 135deg, #691e1a 10%, #360940 100%);*/
+  background-color: #111111;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,7 @@
 .nav-logo {
   color: blue;
   align-items: center;
+  margin:5rem;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -64,7 +65,7 @@
 
 .nav-item:hover:after {
   width: 100%;
-  background: #70192c;
+  background: blue;
 }
 
 .nav-item .active {
