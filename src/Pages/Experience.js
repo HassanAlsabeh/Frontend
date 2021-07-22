@@ -1,9 +1,11 @@
+import ExperienceCard from "../ExperienceCard"
 
+ 
 export const Experience= () => {
   return (
-    <div>
-      <p>hello</p>
-    </div>
+    <div >
+      <ExperienceCard/>
+  </div>
   );
 };
 
