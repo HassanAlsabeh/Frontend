@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useCallback } from 'react';
 import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
-
+import "./modal.css";
 const Background = styled.div`
   width: 80%;
   height: 80%;
@@ -98,9 +98,11 @@ export const Modal = ({ showModal, setShowModal }) => {
       [keyPress]
     );
   
-    return (
+    return  (
       <>
+    
         {showModal ? (
+          <div className="gkoscd">
           <Background onClick={closeModal} ref={modalRef}>
             <animated.div style={animation}>
               <ModalWrapper showModal={showModal}>
@@ -118,7 +120,9 @@ export const Modal = ({ showModal, setShowModal }) => {
               </ModalWrapper>
             </animated.div>
           </Background>
+          </div>
         ) : null}
+        
       </>
     );
   };
