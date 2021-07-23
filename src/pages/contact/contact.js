@@ -22,23 +22,23 @@ const Mailer = () => {
   // export default class Contacts extends Component{
   // render(){
   return (
-    <div className="Contacts">
+    <div className="contacts1">
        <Navbar />
-      <section id="contact">
-        <h1 class="section-header">Contact</h1>
+      <section id="contact1">
+        <h1 class="section1-header">Contact</h1>
 
-        <div class="contact-wrapper">
+        <div class="contact1-wrapper">
           <form
-            id="contact-form"
-            class="form-horizontal"
-            role="form"
+            id="contact1-form"
+            class="form1-horizontal"
+            role="form1"
             onSubmit={sendEmail}
           >
-            <div class="form-group">
+            <div class="form1-group">
               <div class="col-sm-12">
                 <input
-                  type="text"
-                  class="form-control"
+                  type="text3"
+                  class="form1-control"
                   id="name"
                   placeholder="NAME"
                   name="name"
@@ -47,11 +47,11 @@ const Mailer = () => {
               </div>
             </div>
 
-            <div class="form-group">
+            <div class="form1-group">
               <div class="col-sm-12">
                 <input
                   type="email"
-                  class="form-control"
+                  class="form1-control"
                   id="email"
                   placeholder="EMAIL"
                   name="user_email"
@@ -61,7 +61,7 @@ const Mailer = () => {
             </div>
 
             <textarea
-              class="form-control"
+              class="form1-control"
               rows="10"
               placeholder="MESSAGE"
               name="message"
@@ -76,7 +76,7 @@ const Mailer = () => {
             >
               <div class="alt-send-button">
                 <i class="fa fa-paper-plane"></i>
-                <span class="send-text">SEND</span>
+                <span class="send-text3">SEND</span>
               </div>
             </button>
           </form>
@@ -85,15 +85,15 @@ const Mailer = () => {
             <ul class="contact-list">
               <li class="list-item">
                 <i class="fa fa-map-marker fa-2x">
-                  <span class="contact-text place">City, State</span>
+                  <span class="contact-text3 place">City, State</span>
                 </i>
               </li>
 
               <li class="list-item">
                 <i class="fa fa-phone fa-2x">
-                  <span class="contact-text phone">
+                  <span class="contact-text3 phone">
                     <a
-                      href="https://api.whatsapp.com/send/?phone=%2B96171563884&text&app_absent=0"
+                      href="https://api.whatsapp.com/send/?phone=%2B96171563884&text3&app_absent=0"
                       title="Give me a call"
                     >
                       +961 71 563 884
@@ -104,7 +104,7 @@ const Mailer = () => {
 
               <li class="list-item">
                 <i class="fa fa-envelope fa-2x">
-                  <span class="contact-text gmail">
+                  <span class="contact-text3 gmail">
                     <a href="# " title="Send me an email">
                       saeed.el.jurdi@gmail.com{" "}
                     </a>

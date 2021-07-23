@@ -41,25 +41,25 @@ export default class Contacts extends Component {
         {this.state.About &&
           this.state.About.map((item, index) => {
             return (
-              <div className="container1">
+              <div className="container2">
                 <div className="data">
                   <div className="title" key={item._id}>
                   
-                    <h1>{item.title1}</h1>
-                    <h3>{item.description1}</h3>
-                    <h1>{item.title2}</h1>
-                    <h3>{item.description2}</h3>
-                    <h1>{item.title3}</h1>
-                    <h3>{item.description3}</h3>
-                    <h1>{item.title4}</h1>
-                    <h3>{item.description4}</h3>
+                    <h1>{item.certificate}</h1><br></br>
+                    <h3>{item.certificatedesc}</h3><br></br>
+                    <h1>{item.profile}</h1><br></br>
+                    <h3>{item.profiledesc}</h3><br></br>
+                    <h1>{item.languages}</h1><br></br>
+                    <h3>{item.languagesdesc}</h3><br></br>
+                    <h1>{item.programs}</h1><br></br>
+                    <h3>{item.programsdesc}</h3><br></br>
                   </div>
                   <div className="button1 ">
                     <a href='../components/pdf/Hassan.resume.pdf' download>Resume</a>
                     </div>
                 </div>
                 <div className="personal_img">
-                  <img src="https://dreambuilders.dk/wp-content/uploads/2015/03/myAvatar-1.png" />
+                  <img src={`http://localhost:5003/about/about/uploads/${item.image}`} />
                   
                 </div>
               </div>

@@ -1,10 +1,10 @@
-.cards {
+.cards6 {
   margin: 10% 10% 10% 10%;
   display: flex;
   flex-wrap: wrap;
 }
-.container5 {
-  width: 25%;
+.container7 {
+  width: 33%;
 }
 .title-bar {
   display: inline-block;
@@ -21,7 +21,7 @@
 
 // Simple Line Lite
 
-.card {
+.card8 {
   position: relative;
   width: 25;
   margin: 1em;
@@ -55,16 +55,17 @@
     transform: scale(1, 1.05);
   }
 }
-.card-img {
+
+.card8-img {
   width: 100%;
   display: block;
   transition: opacity ease-out 550ms;
   opacity: 1;
 }
-.card:hover .card-img {
+.card8:hover .card8-img {
   opacity: 0.4;
 }
-.card-text {
+.card8-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,13 +74,13 @@
   transition: opacity ease-out 550ms;
   opacity: 0;
 }
-.card:hover .card-text {
+.card8:hover .card8-text {
   opacity: 1;
 }
 
 // Fat-Line Dark
 
-.card-2 {
+.card8-2 {
   position: relative;
   margin: 1em;
   background: black;
@@ -112,15 +113,15 @@
     transform: scale(1, 1);
   }
 }
-.card-2:hover .card-text {
+.card8-2:hover .card8-text {
   opacity: 1;
 }
-.card-2:hover .card-img {
+.card8-2:hover .card8-img {
   opacity: 0.1;
 }
 
 // Color Gradient
-.card-3 {
+.card8-3 {
   position: relative;
   margin: 1em;
   background: linear-gradient(35deg, #ff8080, #006633);
@@ -153,15 +154,15 @@
     transform: scale(1, 1);
   }
 }
-.card-3:hover .card-text {
+.card8-3:hover .card8-text {
   opacity: 1;
 }
-.card-3:hover .card-img {
+.card8-3:hover .card8-img {
   opacity: 0.5;
 }
 
-// Card Text Inside Lower Box
-.card-4 {
+// card8 Text Inside Lower Box
+.card8-4 {
   position: relative;
   margin: 1em;
   background: white;
@@ -185,10 +186,10 @@
     opacity: 0.8;
   }
 }
-.card-4:hover .card-img {
+.card8-4:hover .card8-img {
   opacity: 0.8;
 }
-.card-text-4 {
+.card8-text-4 {
   position: absolute;
   line-height: 0.3em;
   text-align: left;
@@ -199,6 +200,6 @@
   transition: transform ease-out 550ms;
   z-index: 1;
 }
-.card-4:hover .card-text-4 {
+.card8-4:hover .card8-text-4 {
   transform: scale(1, 1);
 }

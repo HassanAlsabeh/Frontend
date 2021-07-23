@@ -45,21 +45,22 @@ export default class Projects extends Component {
     return (
       <div>
         <Navbar />
-        <div className="cards">
+        <div className="cards6">
           {this.state.Projects &&
             this.state.Projects.map((item, index) => {
               return (
-                <div class="container5" key={item._id}>
-                  <div className="card">
+                <div class="container7" key={item._id}>
+                  <div className="card8">
                     <img
-                      src={`http://localhost:5003/project/uploads/${item.image}`}
+                      src={`http://localhost:5003/project/projects/uploads/${item.image}`}
                       alt=""
-                      height="200px"
-                      className="card-img"
+                      height="350px"
+                     
+                      className="card8-img"
                     ></img>
-                    <div className="card-text">
-                      <h3 className="card-title">{item.title}</h3>
-                      <p className=" card-body">{item.description}</p>
+                    <div className="card8-text">
+                      <h3 className="card8-title">{item.title}</h3>
+                      <p className=" card8-body">{item.description}</p>
                     </div>
                   </div>
                 </div>

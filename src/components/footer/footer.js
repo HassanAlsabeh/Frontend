@@ -7,12 +7,11 @@ export default class Footer extends Component {
       <div>
         <footer class="flex-rw">
           <ul class="footer-list-top">
-            <div className="logo">
-            <NavLink exact to="/" className="nav-logo">
-            <span>SJ</span>
-            <i className="fab fa-connectdevelop"></i>
-          </NavLink>
-            
+            <div className="logo1">
+              <NavLink exact to="/" className="nav-logo1">
+                <span>SJ</span>
+                <i className="fab fa-connectdevelop"></i>
+              </NavLink>
             </div>
           </ul>
 
@@ -37,8 +36,8 @@ export default class Footer extends Component {
                 HOME DECOR
               </a>
             </li>
-           
-          </ul><ul class="footer-list-top">
+          </ul>
+          <ul class="footer-list-top">
             <li>
               <h4 class="footer-list-header">The Gift Selection</h4>
             </li>
@@ -59,7 +58,6 @@ export default class Footer extends Component {
                 HOME DECOR
               </a>
             </li>
-           
           </ul>
           <ul class="footer-list-top">
             <li id="help">
@@ -83,8 +81,6 @@ export default class Footer extends Component {
                 FAQ
               </a>
             </li>
-           
-            
           </ul>
           <section class="footer-social-section flex-rw">
             <span class="footer-social-overlap footer-social-connect">
@@ -158,9 +154,9 @@ export default class Footer extends Component {
           </section>
           <section class="footer-bottom-section flex-rw">
             <div class="footer-bottom-wrapper">
-              <i class="fa fa-copyright" role="copyright"></i> 2019 Pavilion in{" "}
+              <i class="fa fa-copyright" role="copyright"></i> 2021 {" "}
               <address class="footer-address" role="company address">
-                Bergen, NY
+                Lebanon
               </address>
               <span class="footer-bottom-rights">
                 {" "}

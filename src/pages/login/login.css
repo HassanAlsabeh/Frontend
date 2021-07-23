@@ -109,7 +109,7 @@ input[type=button2]:active, input[type=submit]:active, input[type=reset]:active 
   transform: scale(0.95);
 }
 
-input[type=text2] {
+input[type=text2] ,input[type= password]{
   background-color: #f6f6f6;
   border: none;
   color: #0d0d0d;

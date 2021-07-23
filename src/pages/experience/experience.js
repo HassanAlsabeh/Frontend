@@ -14,7 +14,7 @@ export default class Expereinces extends Component {
     return (
       <div>
          <Navbar />
-      <div className="cards">
+      <div className="cards1">
         
         {project.map((item) => {
           return <ExpereinceCard data={item} />;

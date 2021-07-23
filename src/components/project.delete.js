@@ -20,9 +20,6 @@ export default class Projects extends Component {
     this.state = { Projects: [] };
   }
 
-
-
-
   async componentDidMount() {
     await axios
       .get("http://localhost:5003/project/")
@@ -34,43 +31,50 @@ export default class Projects extends Component {
       });
   }
 
-  deleteProjects = (id)=> {
-      console.log()
-      axios.delete(`http://localhost:5003/project/delete/${id}`)
-        .then(response => { console.log(response.data)});
+  deleteProjects = (id) => {
+    console.log();
+    axios
+      .delete(`http://localhost:5003/project/delete/${id}`)
+      .then((response) => {
+        console.log(response.data);
+      }, alert("Your file will be deleted"));
 
-      this.setState({
-        Projects: this.state.Projects.filter(el => el._id !== id)
-      })
-    }
+    this.setState({
+      Projects: this.state.Projects.filter((el) => el._id !== id),
+    });
+  };
 
   render() {
     return (
       <div>
-        
-        <div className="cards">
+        <div className="cards6">
           {this.state.Projects &&
             this.state.Projects.map((item, index) => {
               return (
-                <div class="container5" key={item._id}>
-                  <div className="card">
+                <div class="container7" key={item._id}>
+                  <div className="card8">
                     <img
-                      src={`http://localhost:5003/project/uploads/${item.image}`}
+                      src={`http://localhost:5003/project/projects/uploads/${item.image}`}
                       alt=""
                       height="200px"
-                      className="card-img"
+                      className="card8-img"
                     ></img>
-                    <div className="card-text">
-                      <h3 className="card-title">{item.title}</h3>
-                      <p className=" card-body">{item.description}</p>
+                    <div className="card8-text">
+                      <h3 className="card8-title">{item.title}</h3>
+                      <p className=" card8-body">{item.description}</p>
                     </div>
                   </div>
-                  <button type="submit" style={{marginLeft:'40%'}} onClick={(()=>this.deleteProjects(item._id))}>Delete</button>
+                  <button
+                    type="submit"
+                    style={{ marginLeft: "40%" }}
+                    onClick={() => this.deleteProjects(item._id)}
+                  >
+                    Delete
+                  </button>
                 </div>
               );
             })}
         </div>
-       
       </div>
     );
   }
