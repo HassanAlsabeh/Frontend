@@ -72,13 +72,13 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <div class="wrapper fadeInDown">
-          <div id="formContent">
+        <div class="wrapper_login fadeInDown">
+          <div id="formContent_login">
             <h2 class="active"> Sign In </h2>
 
             <form onSubmit={this.LogIN}>
               <input
-                type="text2"
+                type="text_6"
                 id="username"
                 class="fadeIn second"
                 name="username"

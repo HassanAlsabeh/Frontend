@@ -51,9 +51,9 @@ const UpdateAbout = () => {
   return (
     <div>
       <Dashboard />
-      <div class="container">
+      <div class="container_about">
         <form
-          id="contact"
+          id="contact_about"
           onSubmit={changeonClick}
           encType="multipart/form-data"
         >
@@ -62,7 +62,7 @@ const UpdateAbout = () => {
 
           <input
             placeholder="Certificate"
-            type="text"
+            type="text_1"
             tabindex="1"
             required
             autofocus
@@ -72,7 +72,7 @@ const UpdateAbout = () => {
 
           <input
             placeholder="certificatedesc"
-            type="text"
+            type="text_1"
             tabindex="2"
             required
             value={certificatedesc}
@@ -81,7 +81,7 @@ const UpdateAbout = () => {
 
           <input
             placeholder="Profile"
-            type="text"
+            type="text_1"
             tabindex="3"
             required
             value={profile}
@@ -90,7 +90,7 @@ const UpdateAbout = () => {
 
           <input
             placeholder="profiledesc"
-            type="text"
+            type="text_1"
             tabindex="4"
             required
             value={profiledesc}
@@ -99,7 +99,7 @@ const UpdateAbout = () => {
 
           <input
             placeholder="Languages"
-            type="text"
+            type="text_1"
             tabindex="4"
             required
             value={languages}
@@ -108,7 +108,7 @@ const UpdateAbout = () => {
 
           <input
             placeholder="Languagesdesc"
-            type="text"
+            type="text_1"
             tabindex="4"
             required
             value={languagesdesc}
@@ -116,7 +116,7 @@ const UpdateAbout = () => {
           />
           <input
             placeholder="Programs"
-            type="text"
+            type="text_1"
             tabindex="4"
             required
             value={programs}
@@ -125,19 +125,21 @@ const UpdateAbout = () => {
 
           <input
             placeholder="Programsdesc"
-            type="text"
+            type="text_1"
             tabindex="4"
             required
             value={programsdesc}
             onChange={(e) => setProgramsdesc(e.target.value)}
-          />
+          /><br></br><br></br>
+          <label>Upload image</label><br></br>
           <input type="file" name="image" onChange={onChangeFile} />
-
+          <br></br><br></br>
+          
           <button
-            name="submit"
-            type="submit"
-            id="contact-submit"
-            data-submit="...Sending"
+            name="submit_1"
+            type="submit_1"
+            id="contact_about-submit_1"
+            data-submit_1="...Sending"
           >
             Submit
           </button>
@@ -151,7 +153,7 @@ const UpdateAbout = () => {
     // //     <div>
     // //       <label>Certificate</label>
     // //       <input */}
-    // {/* //         type="text"
+    // {/* //         type="text_1"
     // //         required
     // //         value={certificate}
     // //         onChange={(e) => setCertificate(e.target.value)}

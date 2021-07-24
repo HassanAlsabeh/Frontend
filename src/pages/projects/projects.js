@@ -50,19 +50,35 @@ export default class Projects extends Component {
             this.state.Projects.map((item, index) => {
               return (
                 <div class="container7" key={item._id}>
-                  <div className="card8">
-                    <img
-                      src={`http://localhost:5003/project/projects/uploads/${item.image}`}
-                      alt=""
-                      height="350px"
-                     
-                      className="card8-img"
-                    ></img>
+                  <a href="#popup1"><div className="card8">
+                   
+                      <img
+                        src={`http://localhost:5003/project/projects/uploads/${item.image}`}
+                        alt=""
+                        height="350px"
+                        className="card8-img"
+                      ></img>
+                    
                     <div className="card8-text">
-                      <h3 className="card8-title">{item.title}</h3>
+                      <h3 className="card8-title"></h3>
                       <p className=" card8-body">{item.description}</p>
                     </div>
-                  </div>
+                    <div>
+                      <div id="popup1" class="overlay">
+                        <div class="popup1">
+                          <h2>{item.title}</h2>
+                          <a class="close" href="#">
+                            &times;
+                          </a>
+                          <div class="content">
+                            <p>
+                            {item.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div></a>
                 </div>
               );
             })}

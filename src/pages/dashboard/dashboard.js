@@ -1,71 +1,120 @@
 import React, { Component } from "react";
 import { Redirect } from "react-router-dom";
 import "./dashboard.css";
+
 export default class Dashboard extends Component {
   Logout = () => {
     localStorage.removeItem("login");
     this.props.history.push("/login");
-  };
+  }
 
   render() {
     return (
-      <div className="container_about_dash">
-        <div class="area"></div>
-        {localStorage.getItem("login", true) ? (
-          <nav class="main-menu">
-            <ul>
-              <li>
-                <a href="/dashboard">
-                  <i class="fa fa-home fa-2x"></i>
-                  <span class="nav-text">Dashboard</span>
-                </a>
-              </li>
-              <li class="has-subnav">
-                <a href="/about/update/60f9310d8fa6219c03894f64">
-                  <i class="fa fa-laptop fa-2x"></i>
-                  <span class="nav-text">About</span>
-                </a>
-              </li>
-              <li class="has-subnav">
-                <a href="#">
-                  <i class="fa fa-list fa-2x"></i>
-                  <span class="nav-text">Experience</span>
-                </a>
-              </li>
-              <li class="has-subnav">
-                <a href="/project/list">
-                  <i class="fa fa-folder-open fa-2x"></i>
-                  <span class="nav-text">Projects</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-bar-chart-o fa-2x"></i>
-                  <span class="nav-text">Contacts</span>
-                </a>
-              </li>
-            </ul>
+      // <div className="container_about_dash">
+      //   <div class="area_dash"></div>
+      //   {localStorage.getItem("login", true) ? (
+      //     <nav class="main_menu">
+      //       <ul>
+      //         <li>
+      //           <a href="/dashboard">
+      //             <i class="fa fa-home fa-2x"></i>
+      //             <span class="nav-text">Dashboard</span>
+      //           </a>
+      //         </li>
+      //         <li class="has-subnav">
+      //           <a href="/about/update/60f9310d8fa6219c03894f64">
+      //             <i class="fa fa-laptop fa-2x"></i>
+      //             <span class="nav-text">About</span>
+      //           </a>
+      //         </li>
+      //         <li class="has-subnav">
+      //           <a href="#">
+      //             <i class="fa fa-list fa-2x"></i>
+      //             <span class="nav-text">Experience</span>
+      //           </a>
+      //         </li>
+      //         <li class="has-subnav">
+      //           <a href="/project/list">
+      //             <i class="fa fa-folder-open fa-2x"></i>
+      //             <span class="nav-text">Projects</span>
+      //           </a>
+      //         </li>
+      //         <li>
+      //           <a href="#">
+      //             <i class="fa fa-bar-chart-o fa-2x"></i>
+      //             <span class="nav-text">Contacts</span>
+      //           </a>
+      //         </li>
+      //       </ul>
 
-            <ul class="logout">
-              <li>
-                <a>
-                  <i class="fa fa-power-off fa-2x"></i>
-                  <span class="nav-text">
-                    <button
-                      onClick={() => {
-                        this.Logout();
-                      }}
-                    >
-                      Logout
-                    </button>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        ) : (
-          <Redirect to="/login"></Redirect>
-        )}
+      //       <ul class="logout_dash">
+      //         <li>
+      //           <a>
+      //             <i class="fa fa-power-off fa-2x"></i>
+      //             <div class="nav-text">
+      //               <button
+      //                 onClick={() => {
+      //                   this.Logout();
+      //                 }}
+      //               >
+      //                 Logout
+      //               </button>
+      //             </div>
+      //           </a>
+      //         </li>
+      //       </ul>
+      //     </nav>
+      //   ) : (
+      //     <Redirect to="/login"></Redirect>
+      //   )}
+      // </div>
+      <div id="viewport">
+        <div id="sidebar">
+          <header>
+            <a href="#">My App</a>
+          </header>
+          {localStorage.getItem("login", true) ? (
+            <nav class="main_menu">
+              <ul class="nav">
+                <li>
+                  <a href="/dashboard">
+                    <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="/about/update/60f9310d8fa6219c03894f64">
+                    <i class="zmdi zmdi-link"></i> About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="zmdi zmdi-widgets"></i> Experience
+                  </a>
+                </li>
+                <li>
+                  <a href="/project/list">
+                    <i class="zmdi zmdi-calendar"></i> Projects
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="zmdi zmdi-info-outline"></i> Contacts
+                  </a>
+                </li>
+                <button
+                  style={{ margin: "100px 10px 0px 0px" }}
+                  onClick={() => {
+                    this.Logout();
+                  }}
+                >
+                  Logout
+                </button>
+              </ul>
+            </nav>
+          ) : (
+            <Redirect to="/login"></Redirect>
+          )}
+        </div>
       </div>
     );
   }
@@ -93,7 +142,7 @@ export default class Dashboard extends Component {
 //   return (
 
 //     <div className="App">
-//          {localStorage.getItem("login",true) ? (         <nav class="main-menu">
+//          {localStorage.getItem("login",true) ? (         <nav class="main_menu">
 
 //       <Router>
 //         <SideMenu

@@ -10,6 +10,7 @@ const Projects = (props) => (
     <td>{props.projects.description}</td>
     <td>{props.projects.button}</td>
     <td>{props.projects.image}</td>
+    
 
     <td>
       <Link to={`/project/update/${props.projects._id}`}>edit</Link> |{" "}
@@ -74,6 +75,7 @@ export default class ProjectsList extends Component {
       <div>
         <Dashboard />
         <div className="table_projects">
+          
           <table>
             <caption>Projects List</caption>
             <thead>
@@ -82,19 +84,21 @@ export default class ProjectsList extends Component {
                 <th scope="col">Description</th>
                 <th scope="col">button</th>
                 <th scope="col">Image</th>
+                <th scope="col">EDIT/DELETE</th>
               </tr>
             </thead>
             <tbody>{this.projectList()}</tbody>
           </table>
           <br></br>
           <br></br>
-          <button
+          <button1
+          className="button_project_1"
             id="contact-submit"
             data-submit="...Sending"
-            style={{ backgroundColor: "lightblue" }}
+           
           >
-            <Link to={"/project/add/"}>ADD NEW PROJECT</Link>
-          </button>
+            <Link  to={"/project/add/"}>ADD NEW PROJECT</Link>
+          </button1>
 
           {/* <div>
         <h3>Logged project</h3>

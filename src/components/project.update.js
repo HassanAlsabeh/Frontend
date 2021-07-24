@@ -50,11 +50,11 @@
 //                   key={item._id}
 //                 >
 //                   Title <br></br>
-//                   <input type="text" value={item.title} name="title" />
+//                   <input type="text_4" value={item.title} name="title" />
 //                   <br></br>
 //                   Description{" "}
 //                   <input
-//                     type="text"
+//                     type="text_4"
 //                     value={item.description}
 //                     name="description"
 //                   />
@@ -151,7 +151,7 @@
 
 //         <div className="form-group">
 //           <label>Title: </label>
-//           <input  type="text"
+//           <input  type="text_4"
 //           style={{backgroundColor:"red"}}
 //               required
 //               className="form-control"
@@ -161,7 +161,7 @@
 //         </div>
 //         <div className="form-group">
 //           <label>Description: </label>
-//           <input  type="text"
+//           <input  type="text_4"
 //            style={{backgroundColor:"red"}}
 //               required
 //               className="form-control"
@@ -182,6 +182,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import "./project_edit.css"
 import { useParams } from "react-router-dom";
 import Dashboard from "../pages/dashboard/dashboard";
 
@@ -215,9 +216,9 @@ const ProjectUpdate = () => {
   return (
     <div>
       <Dashboard />
-      <div class="container">
+      <div class="container_project_update">
         <form
-          id="contact"
+          id="contact_project_edit"
           onSubmit={changeonClick}
           encType="multipart/form-data"
         >
@@ -226,7 +227,7 @@ const ProjectUpdate = () => {
 
           <input
             placeholder="Title"
-            type="text"
+            type="text_4"
             tabindex="1"
             required
             autofocus
@@ -236,7 +237,7 @@ const ProjectUpdate = () => {
 
           <input
             placeholder="Description"
-            type="text"
+            type="text_4"
             tabindex="2"
             required
             value={description}
@@ -244,30 +245,30 @@ const ProjectUpdate = () => {
           />
           <input
             placeholder="button"
-            type="text"
+            type="text_4"
             tabindex="2"
             required
             value={button}
             onChange={(e) => setbutton(e.target.value)}
-          />
-          <label>Upload image</label>
+          /><br></br><br></br>
+          <label>Upload image</label><br></br>
           <input type="file" name="image" onChange={onChangeFile} />
-
+          <br></br><br></br>
           <button
-            name="submit"
-            type="submit"
-            id="contact-submit"
-            data-submit="...Sending"
+            name="submit_4"
+            type="submit_4"
+            id="contact_project_edit-submit_4"
+            data-submit_4="...Sending"
           >
-            Submit
+            UPDATE
           </button>
         </form>
       </div>
-      {/* <form onSubmit={changeonClick} encType="multipart/form-data">
+      {/* <form onsubmit_4={changeonClick} encType="multipart/form-data">
         <div>
           <label>Title</label>
           <input
-            type="text"
+            type="text_4"
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -276,7 +277,7 @@ const ProjectUpdate = () => {
         <div>
           <label>Description</label>
           <input
-            type="text"
+            type="text_4"
             required
             value={description}
             onChange={(e) => setdescription(e.target.value)}

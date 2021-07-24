@@ -36,29 +36,29 @@ export default class Contacts extends Component {
     return (
       <div>
         <Navbar />
-        {/* <h1>{this.state.About && this.state.About[0] && this.state.About[1].title}</h1> */}
+        {/* <p style={{fontSize="1em"}}>{this.state.About && this.state.About[0] && this.state.About[1].title}</h1> */}
 
         {this.state.About &&
           this.state.About.map((item, index) => {
             return (
-              <div className="container2">
-                <div className="data">
-                  <div className="title" key={item._id}>
+              <div className="container_about_2">
+                <div className="data_about_2">
+                  <div className="title_about_2" key={item._id}>
                   
-                    <h1>{item.certificate}</h1><br></br>
-                    <h3>{item.certificatedesc}</h3><br></br>
-                    <h1>{item.profile}</h1><br></br>
-                    <h3>{item.profiledesc}</h3><br></br>
-                    <h1>{item.languages}</h1><br></br>
-                    <h3>{item.languagesdesc}</h3><br></br>
-                    <h1>{item.programs}</h1><br></br>
-                    <h3>{item.programsdesc}</h3><br></br>
+                    <p style={{fontSize:"2.2em"}}>{item.certificate}</p >
+                    <h3>{item.certificatedesc}</h3>
+                    <p style={{fontSize:"2.2em"}}>{item.profile}</p >
+                    <h3>{item.profiledesc}</h3>
+                    <p style={{fontSize:"2.2em"}}>{item.languages}</p >
+                    <h3>{item.languagesdesc}</h3>
+                    <p style={{fontSize:"2.2em"}}>{item.programs}</p >
+                    <h3>{item.programsdesc}</h3>
                   </div>
-                  <div className="button1 ">
-                    <a href='../components/pdf/Hassan.resume.pdf' download>Resume</a>
-                    </div>
+                  <a  href='../components/pdf/Hassan.resume.pdf' download >    <button style={{color:"black"}} type="button6" className="startBtn"> Resume</button></a>
+                   
+                   
                 </div>
-                <div className="personal_img">
+                <div className="personal_img_about_2">
                   <img src={`http://localhost:5003/about/about/uploads/${item.image}`} />
                   
                 </div>

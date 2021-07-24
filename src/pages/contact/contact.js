@@ -22,23 +22,23 @@ const Mailer = () => {
   // export default class Contacts extends Component{
   // render(){
   return (
-    <div className="contacts1">
+    <div className="Contacts">
        <Navbar />
-      <section id="contact1">
-        <h1 class="section1-header">Contact</h1>
+      <section id="contact">
+        <h1 className="section-header">Contact</h1>
 
-        <div class="contact1-wrapper">
+        <div className="contact-wrapper">
           <form
-            id="contact1-form"
-            class="form1-horizontal"
-            role="form1"
+            id="contact-form"
+            className="form-horizontal"
+            role="form"
             onSubmit={sendEmail}
           >
-            <div class="form1-group">
-              <div class="col-sm-12">
+            <div className="form-group">
+              <div className="col-sm-12">
                 <input
-                  type="text3"
-                  class="form1-control"
+                  type="text"
+                  className="form-control"
                   id="name"
                   placeholder="NAME"
                   name="name"
@@ -47,11 +47,11 @@ const Mailer = () => {
               </div>
             </div>
 
-            <div class="form1-group">
-              <div class="col-sm-12">
+            <div className="form-group">
+              <div className="col-sm-12">
                 <input
                   type="email"
-                  class="form1-control"
+                  className="form-control"
                   id="email"
                   placeholder="EMAIL"
                   name="user_email"
@@ -61,7 +61,7 @@ const Mailer = () => {
             </div>
 
             <textarea
-              class="form1-control"
+              className="form-control"
               rows="10"
               placeholder="MESSAGE"
               name="message"
@@ -69,31 +69,31 @@ const Mailer = () => {
             ></textarea>
 
             <button
-              class="btn btn-primary send-button"
+              className="btn btn-primary send_button"
               id="submit"
               type="submit"
               value="SEND"
             >
-              <div class="alt-send-button">
-                <i class="fa fa-paper-plane"></i>
-                <span class="send-text3">SEND</span>
+              <div className="alt-send_button">
+                <i className="fa fa-paper-plane"></i>
+                <span className="send_text7">SEND</span>
               </div>
             </button>
           </form>
 
-          <div class="direct-contact-container">
-            <ul class="contact-list">
-              <li class="list-item">
-                <i class="fa fa-map-marker fa-2x">
-                  <span class="contact-text3 place">City, State</span>
+          <div className="direct-contact-container">
+            <ul className="contact-list">
+              <li className="list-item">
+                <i className="fa fa-map-marker fa-2x">
+                  <span style={{fontSize:"0.7em"}} className="contact-text7 place">Beirut, Lebanon</span>
                 </i>
               </li>
 
-              <li class="list-item">
-                <i class="fa fa-phone fa-2x">
-                  <span class="contact-text3 phone">
-                    <a
-                      href="https://api.whatsapp.com/send/?phone=%2B96171563884&text3&app_absent=0"
+              <li className="list-item">
+                <i className="fa fa-phone fa-2x">
+                  <span className="contact-text7 phone">
+                    <a style={{fontSize:"1.5em",marginLeft:"30px"}}
+                      href="https://api.whatsapp.com/send/?phone=%2B96171563884&text&app_absent=0"
                       title="Give me a call"
                     >
                       +961 71 563 884
@@ -102,10 +102,10 @@ const Mailer = () => {
                 </i>
               </li>
 
-              <li class="list-item">
-                <i class="fa fa-envelope fa-2x">
-                  <span class="contact-text3 gmail">
-                    <a href="# " title="Send me an email">
+              <li className="list-item">
+                <i className="fa fa-envelope fa-2x">
+                  <span className="contact-text7 gmail">
+                    <a href="# " title="Send me an email" style={{fontSize:"1.5em"}}>
                       saeed.el.jurdi@gmail.com{" "}
                     </a>
                   </span>
@@ -113,37 +113,37 @@ const Mailer = () => {
               </li>
             </ul>
 
-            <ul class="social-media-list">
-              <a href="#" target="_blank" class="contact-icon">
-                <i class="fa fa-github" aria-hidden="true"></i>
+            <ul className="social-media-list">
+              <a href="#" target="_blank" className="contact-icon">
+                <i className="fa fa-github" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://www.linkedin.com/in/saeed-el-jurdi"
                 target="_blank"
-                class="contact-icon"
+                className="contact-icon"
               >
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i className="fa fa-linkedin" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://www.facebook.com/sjurdy"
                 target="_blank"
-                class="contact-icon"
+                className="contact-icon"
               >
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i className="fa fa-facebook" aria-hidden="true"></i>
               </a>
 
               <a
                 href="https://instagram.com/jurdi.saeed?utm_medium=copy_link"
                 target="_blank"
-                class="contact-icon"
+                className="contact-icon"
               >
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </ul>
 
-            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+            <div className="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
           </div>
         </div>
       </section>

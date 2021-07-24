@@ -98,7 +98,7 @@ export default class Sliders extends Component {
 					<div className="inner">
 						<h1 style={{fontSize:"4em"}}>{item.title}</h1>
 						<p style={{fontSize:"2em"}}>{item.description}</p>
-						<button style={{fontSize:"1.5em",backgroundColor:"gray"}}>{item.button}</button>
+						<a href="/projects"> 	<button style={{fontSize:"1.5em",backgroundColor:"gray"}}>{item.button}</button></a>
 					</div>
 					
 				</div>

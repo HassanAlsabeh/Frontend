@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
+import "./project_add.css"
+import Dashboard from "../pages/dashboard/dashboard";
 
 const AddProjectForm = () => {
   const [title, setTitle] = useState("");
@@ -82,18 +84,19 @@ const AddProjectForm = () => {
 
   return (
     <div>
-      <div class="container">
+      <Dashboard/>
+      <div class="container_project">
         <form
-          id="contact"
+          id="contact_project"
           onSubmit={changeonClick}
           encType="multipart/form-data"
         >
-          <h3>Creat new Project</h3>
+          <h3>Create new Project</h3>
           <br></br>
 
           <input
             placeholder="Title"
-            type="text"
+            type="text_2"
             tabindex="1"
             required
             autofocus
@@ -103,7 +106,7 @@ const AddProjectForm = () => {
 
           <input
             placeholder="Description"
-            type="text"
+            type="text_2"
             tabindex="2"
             required
             value={description}
@@ -112,23 +115,23 @@ const AddProjectForm = () => {
 
           <input
             placeholder="button"
-            type="text"
+            type="text_2"
             tabindex="2"
             required
             value={button}
             onChange={(e) => setbutton(e.target.value)}
-          />
+          /><br></br><br></br>
 
-          <label>Upload image</label>
-          <input type="file" name="image" onChange={onChangeFile} />
+          <label>Upload image</label><br></br>
+          <input type="file" name="image" onChange={onChangeFile} /><br></br><br></br>
 
           <button
-            name="submit"
-            type="submit"
-            id="contact-submit"
-            data-submit="...Sending"
+            name="submit_2"
+            type="submit_2"
+            id="contact-submit_2"
+            data-submit_2="...Sending"
           >
-            Submit
+            ADD
           </button>
         </form>
       </div>
@@ -138,7 +141,7 @@ const AddProjectForm = () => {
         <div>
           <label>Title</label>
           <input
-            type="text"
+            type="text_2"
             required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -147,7 +150,7 @@ const AddProjectForm = () => {
         <div>
           <label>button</label>
           <input
-            type="text"
+            type="text_2"
             required
             value={button}
             onChange={(e) => setButton(e.target.value)}
@@ -156,7 +159,7 @@ const AddProjectForm = () => {
         <div>
           <label>Description</label>
           <input
-            type="text"
+            type="text_2"
             required
             value={description}
             onChange={(e) => setdescription(e.target.value)}

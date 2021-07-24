@@ -1,16 +1,16 @@
-.contacts1 {
+.Contacts {
   margin: 0;
   padding: 0;
   background-color: #000;
   padding-bottom: 100px;
 }
 
-#contact1 {
+#contact {
   width: 100%;
   height: 100%;
 }
 
-.section1-header {
+.section-header {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0;
@@ -20,7 +20,7 @@
   letter-spacing: 6px;
 }
 
-.contact1-wrapper {
+.contact-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,15 +30,15 @@
   max-width: 940px;
 }
 
-/* Left contact1 page */
-.form1-horizontal {
+/* Left contact page */
+.form-horizontal {
   /*float: left;*/
   max-width: 600px;
   font-family: "Lato";
   font-weight: 400;
 }
 
-.form1-control,
+.form-control,
 textarea {
   max-width: 100%;
   padding: 1.5%;
@@ -49,7 +49,7 @@ textarea {
   letter-spacing: 1px;
 }
 
-.send-button {
+.send_button {
   margin-left: 18%;
   margin-top: 25px;
   height: 44px;
@@ -58,53 +58,54 @@ textarea {
   transition: all 1s ease-in-out;
 }
 
-.alt-send-button {
-  width: 140px;
+.alt-send_button {
+  width: 113px;
   height: 44px;
-  transition: all 1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.alt-send-button i {
+.alt-send_button i {
   font-size: 1em;
 }
 
-.send-text3 {
+.send_text7 {
   display: block;
   margin-top: 10px;
   font: 700 14px "Lato", sans-serif;
   letter-spacing: 1px;
 }
 
-.alt-send-button:hover {
+.alt-send_button:hover {
   transform: translate3d(0px, -29px, 0px);
 }
 
-/* Begin Right contact1 Page */
-.direct-contact1-container {
+/* Begin Right Contact Page */
+.direct-contact-container {
   max-width: 400px;
 }
 
-/* Location, Phone, Email section1 */
-.contact1-list {
+/* Location, Phone, Email Section */
+.contact-list {
   list-style-type: none;
   margin-left: -30px;
   padding-right: 20px;
 }
-.contact1-list i{
-  font-size: 1.5em;
+.contact-list i{
+  font-size: 2.5em;
+
 }
 .list-item {
   line-height: 4;
   color: #aaa;
 }
 
-.contact1-text3 {
+.contact-text7 {
   font: 300 14px "Lato", sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
 
 .place {
-  margin-left: 62px;
+  margin-left: 92px;
 }
 
 .phone {
@@ -116,13 +117,13 @@ textarea {
   margin-left: 53px;
 }
 
-.contact1-text3 a {
+.contact-text7 a {
   color: #bbb;
   text-decoration: none;
   transition-duration: 0.4 s;
 }
 
-.contact1-text3 a:hover {
+.contact-text7 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -130,7 +131,7 @@ textarea {
 /* Social Media Icons */
 .social-media-list {
   position: relative;
-  font-size: 22px;
+  font-size: 30px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -186,6 +187,7 @@ textarea {
 .copyright {
   font: 200 14px "Oswald", sans-serif;
   color: #555;
+  margin-top: 20px;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -196,16 +198,16 @@ hr {
 
 /* Begin Media Queries*/
 @media screen and (max-width: 850px) {
-  .contact1-wrapper {
+  .contact-wrapper {
     display: flex;
     flex-direction: column;
   }
-  .direct-contact1-container,
-  .form1-horizontal {
+  .direct-contact-container,
+  .form-horizontal {
     margin: 0 auto;
   }
 
-  .direct-contact1-container {
+  .direct-contact-container {
     margin-top: 60px;
     max-width: 300px;
   }
@@ -222,12 +224,12 @@ hr {
 }
 
 @media screen and (max-width: 569px) {
-  .direct-contact1-container,
-  .form1-wrapper {
+  .direct-contact-container,
+  .form-wrapper {
     float: none;
     margin: 0 auto;
   }
-  .form1-control,
+  .form-control,
   textarea {
     margin-bottom: 10% auto;
   }
@@ -238,7 +240,7 @@ hr {
     width: 280px;
   }
 
-  .direct-contact1-container {
+  .direct-contact-container {
     margin-top: 60px;
     max-width: 280px;
   }
@@ -259,7 +261,7 @@ hr {
 }
 
 @media screen and (max-width: 410px) {
-  .send-button {
+  .send_button {
     width: 99%;
   }
 }

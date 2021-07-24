@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/home/home";
-import Home2 from "./pages/home2/home2";
+// import Home2 from "./pages/home2/home2";
 import About from "./pages/about/about";
 import Experience from "./pages/experience/experience";
 import Projects from "./pages/projects/projects";
@@ -18,8 +18,8 @@ import ProjectsList from "./components/project.list";
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={Home} style={{overflowy:"hidden"}}/>
-      <Route path="/home" exact component={Home2} />
+      <Route path="/" exact component={Home} />
+      {/* <Route path="/home" exact component={Home2} /> */}
       <Route path="/about" exact component={About} />
       <Route path="/about/update/60f9310d8fa6219c03894f64" exact component={UpdateAbout} />
       <Route path="/project/add" exact component={ProjectAdd} />

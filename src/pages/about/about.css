@@ -1,4 +1,4 @@
-.container2{
+.container_about_2{
     
     padding: 10% 0 10% 0;
     display: flex;
@@ -6,26 +6,38 @@
     font-size: 0.75em;
 
 }
-.personal_img img{
-    width: 300px;
-    height: 350px;
+.startBtn{
+    margin-top: 100px;
 }
-.button1 {
+.personal_img_about_2 img{
+    width: 500px;
+    height: 550px;
+}
+button {
+    box-sizing: border-box;
+    padding: 0.4rem 0.8em;
+    margin: 0 10px 10px;
     display: inline-block;
-    border-radius: 4px;
-    background-color: #f4511e;
-    border: none;
+    font-size: 1.2rem;
+    opacity: 0.5;
+    background: rgba(0,0,0,0);
     color: white;
-    text-align: center;
-    font-size: 20px;
-    padding: 15px;
-    width: 100px;
-    transition: all 0.5s;
+}
+button {
+    border-radius: 3px;
+    border: 2px solid;
+    transition: 0.5s;
+}
+button:hover {
+    opacity: 0.75;
+    background: rgba(233, 137, 81, 0.92);
+    color: white;
     cursor: pointer;
-    margin: 55% 0 0 0;
-  }
-  
+}
 
-
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+}
   
   
