@@ -9,6 +9,13 @@ export default class Dashboard extends Component {
   }
 
   render() {
+    const mystyle = {
+      color: "#973333",
+      
+      fontSize: "3rem",
+      flexRow: "1",
+      fontFamily: "DejaVu Sans Mono, monospace"
+    };
     return (
       // <div className="container_about_dash">
       //   <div class="area_dash"></div>
@@ -69,10 +76,11 @@ export default class Dashboard extends Component {
       //   )}
       // </div>
       <div id="viewport">
-        <div id="sidebar">
-          <header>
-            <a href="#">My App</a>
-          </header>
+      <div id="sidebar">
+        <header>
+          <a  style={mystyle} href="/"> <span>SJ</span> 
+          <i className="fab fa-connectdevelop"></i></a>
+        </header>
           {localStorage.getItem("login", true) ? (
             <nav class="main_menu">
               <ul class="nav">
@@ -87,7 +95,7 @@ export default class Dashboard extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/experience/list">
                     <i class="zmdi zmdi-widgets"></i> Experience
                   </a>
                 </li>
@@ -97,7 +105,7 @@ export default class Dashboard extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="/contact/crud">
                     <i class="zmdi zmdi-info-outline"></i> Contacts
                   </a>
                 </li>

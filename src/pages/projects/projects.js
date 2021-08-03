@@ -3,6 +3,7 @@ import Footer from "../../components/footer/footer";
 import Navbar from "../../components/navbar/navbar";
 import axios from "axios";
 import "./project.scss";
+
 // import ProjectCard from "../../components/Projects-cards/project.cards";
 // const project = [
 //   { title: "hello", desc: "project1" },
@@ -50,7 +51,7 @@ export default class Projects extends Component {
             this.state.Projects.map((item, index) => {
               return (
                 <div class="container7" key={item._id}>
-                  <a href="#popup1"><div className="card8">
+                  <div className="card8">
                    
                       <img
                         src={`http://localhost:5003/project/projects/uploads/${item.image}`}
@@ -60,25 +61,11 @@ export default class Projects extends Component {
                       ></img>
                     
                     <div className="card8-text">
-                      <h3 className="card8-title"></h3>
+                      <h1 style={{color:"white"}} className="card8-title">{item.title}</h1>
                       <p className=" card8-body">{item.description}</p>
                     </div>
-                    <div>
-                      <div id="popup1" class="overlay">
-                        <div class="popup1">
-                          <h2>{item.title}</h2>
-                          <a class="close" href="#">
-                            &times;
-                          </a>
-                          <div class="content">
-                            <p>
-                            {item.description}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div></a>
+                  
+                  </div>
                 </div>
               );
             })}

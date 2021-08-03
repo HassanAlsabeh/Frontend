@@ -74,15 +74,18 @@ button:hover {
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 10;
-		background: url('https://image.flaticon.com/icons/png/512/4568/4568931.png') no-repeat center center / 35px;
+		background: url('https://image.flaticon.com/icons/png/512/2223/2223153.png'
+    ) no-repeat center center / 35px;
 		width: 100px;
 		height: 32px;
 		text-indent: -9999px;
 		cursor: pointer;
+    
 }
 
 .previousButton:hover, .nextButton:hover {
-  background: url('https://image.flaticon.com/icons/png/512/4570/4570035.png' ) no-repeat center center / 30px;
+  background: url('https://image.flaticon.com/icons/png/512/2156/2156323.png' 
+  ) no-repeat center center / 30px;
 }
 
 .previousButton {

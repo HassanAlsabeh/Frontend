@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./about.css";
+
 import Navbar from "../../components/navbar/navbar";
 import Footer from "../../components/footer/footer";
 export default class Contacts extends Component {
@@ -37,7 +38,7 @@ export default class Contacts extends Component {
       <div>
         <Navbar />
         {/* <p style={{fontSize="1em"}}>{this.state.About && this.state.About[0] && this.state.About[1].title}</h1> */}
-
+     
         {this.state.About &&
           this.state.About.map((item, index) => {
             return (
@@ -54,7 +55,7 @@ export default class Contacts extends Component {
                     <p style={{fontSize:"2.2em"}}>{item.programs}</p >
                     <h3>{item.programsdesc}</h3>
                   </div>
-                  <a  href='../components/pdf/Hassan.resume.pdf' download >    <button style={{color:"black"}} type="button6" className="startBtn"> Resume</button></a>
+                  <a  href='../components/pdf/Saeed.resume.pdf' download >    <button style={{color:"black"}} type="button6" className="startBtn"> Resume</button></a>
                    
                    
                 </div>
@@ -65,6 +66,7 @@ export default class Contacts extends Component {
               </div>
             );
           })}
+     
         <Footer />
       </div>
     );

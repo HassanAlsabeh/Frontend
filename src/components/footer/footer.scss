@@ -1,20 +1,19 @@
-
-$primary-light-blue: #8DB9ED;
+$primary-light-blue: #c44a4a;
 $primary-line-color: #ccc;
 * {
   box-sizing: border-box
 }
 
 .logo1 {
-	color: blue;
+    color: #973333;
   margin-top: 5%;
-	align-items: center;
-	margin-left: 5%;
-	cursor: pointer;
-	text-decoration: none;
-	font-size: 3rem;
-	
-	font-family: DejaVu Sans Mono, monospace;
+    align-items: center;
+    margin-left: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    
+    font-family: DejaVu Sans Mono, monospace;
   }
 
 ul {
@@ -24,13 +23,13 @@ a {
   text-decoration: none
 }
 .generic-anchor {
-	color: $primary-light-blue;
-	&:visited {
-		color: $primary-light-blue
-	}
-	&:hover {
-		color: $primary-line-color
-	}
+    color: $primary-light-blue;
+    &:visited {
+        color: $primary-light-blue
+    }
+    &:hover {
+        color: $primary-line-color
+    }
 }
 .flex-rw {
   display: flex;

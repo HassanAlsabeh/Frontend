@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  margin: 10% 0% 10% 3%;
+  margin: 10% 2% 10% 2%;
   flex-direction: column;
   width: 800px;
-  min-height: 380px;
-  max-height: 170px;
+  min-height: 450px;
+  max-height: 200px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;

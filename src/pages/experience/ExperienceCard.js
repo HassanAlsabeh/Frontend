@@ -8,13 +8,13 @@ import React, { useState, useEffect } from "react";
 
 function ExperienceCard() {
 
-  const [projects, setProjects] = useState([]);
+  const [experiences, setExperiences] = useState([]);
     useEffect(() => {
       axios
-        .get("http://localhost:5003/project/")
+        .get("http://localhost:5003/experience/")
         .then((response) => {
           console.log(response.data);
-          setProjects([...response.data]);
+          setExperiences([...response.data]);
         })
         .catch((error) => {
           console.log(error);
@@ -24,9 +24,9 @@ function ExperienceCard() {
 
   return (
     <main>
-      {projects.map((item, index)  => (
+      {experiences.map((item, index)  => (
         <Card classes="mr"  key={index}>
-          <Card.Image src={`http://localhost:5003/projects/uploads/${item.image}`}  />
+          <Card.Image src={`http://localhost:5003/experience/uploads/${item.image}`}  />
           <Card.Body>
             <Card.Title>{item.title}</Card.Title>
             <Card.Text>{item.desc}</Card.Text>

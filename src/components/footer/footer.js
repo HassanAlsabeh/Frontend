@@ -6,11 +6,11 @@ export default class Footer extends Component {
     return (
       <div>
         <footer class="flex-rw">
-          <ul class="footer-list-top">
+        <ul class="footer-list-top">
             <div className="logo1">
               <NavLink exact to="/" className="nav-logo1">
-                <span>SJ</span>
-                <i className="fab fa-connectdevelop"></i>
+                <span style={{"color":"#be3c3c"}}>SJ</span>
+                <i className="fab fa-connectdevelop" style={{"color":"#be3c3c"}}></i>
               </NavLink>
             </div>
           </ul>
